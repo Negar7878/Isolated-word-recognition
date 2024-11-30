@@ -2,16 +2,6 @@
 
 This project implements isolated word recognition for Recorded Persian spoken digits (0–9) using various feature extraction techniques. The primary objective is to analyze the performance of different feature extraction methods on recognizing spoken digits (0–9). The project includes Python scripts for feature extraction and models like Wav2Vec 2.0 and HuBERT.
 
----
-
-## Table of Contents
-- [Features](#features)
-- [Feature Extraction Methods](#feature-extraction-methods)
-- [Prerequisites](#prerequisites)
-- [Project Structure](#project-structure)
-
----
-
 ## Features
 1. **Feature Extraction**:
    - Real Cepstrum
@@ -25,6 +15,12 @@ This project implements isolated word recognition for Recorded Persian spoken di
 3. **Analysis and Results**:
    - Comparative analysis of feature extraction techniques.
    - Recognition accuracy for each method.
+
+---
+## Data Naming Convention
+- Each digit has two corresponding `.wav` files:\
+       - Files ending with `1` (e.g., `0_1.wav`) are for **training**.\
+       - Files ending with `2` (e.g., `0_2.wav`) are for **testing**.
 
 ---
 
@@ -49,12 +45,12 @@ Ensure you have the following installed:
 - Librosa
 
 ## Project Structure
-**realCepstrum.py**: Extracts real cepstrum features.\
-**mfcc.py**: Extracts MFCC features.\
-**mfcc_energy.py**: Extracts MFCC features with energy.\
-**delta_mfcc_energy.py**: Extracts delta MFCC features with energy.\
-**delta2_mfcc_energy.py**: Extracts delta-delta MFCC features with energy.\
-**WAV2VEC2.py**: Extracts features using the Wav2Vec 2.0 model.\
-**Hubert.py**: Extracts features using the HuBERT model.\
-**Recording**: Folder containing recorded audio files.
+`realCepstrum.py`: Extracts real cepstrum features.\
+`mfcc.py`: Extracts MFCC features.\
+`mfcc_energy.py`: Extracts MFCC features with energy.\
+`delta_mfcc_energy.py`: Extracts delta MFCC features with energy.\
+`delta2_mfcc_energy.py`: Extracts delta-delta MFCC features with energy.\
+`WAV2VEC2.py`: Extracts features using the Wav2Vec 2.0 model.\
+`Hubert.py`: Extracts features using the HuBERT model.\
+`Recording`: Folder containing recorded audio files.
 
